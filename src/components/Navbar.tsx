@@ -14,6 +14,9 @@ export default function Navbar({ activeSection }: NavbarProps) {
     { name: 'About', href: '#about' },
     { name: 'Skills', href: '#skills' },
     { name: 'Projects', href: '#projects' },
+    { name: 'Internships', href: '#internships' },
+    { name: 'Certifications', href: '#certifications' },
+    { name: 'Achievements', href: '#achievements' },
     { name: 'Resume', href: '#resume' },
     { name: 'Contact', href: '#contact' },
   ];
@@ -93,7 +96,7 @@ export default function Navbar({ activeSection }: NavbarProps) {
       {/* Mobile Drawer */}
       <div
         className={`md:hidden absolute top-full left-0 w-full glass-nav-cloud border-b border-purple-500/20 overflow-hidden transition-all duration-300 ease-in-out ${
-          isOpen ? 'max-h-72 opacity-100' : 'max-h-0 opacity-0'
+          isOpen ? 'max-h-[32rem] opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
         <nav className="flex flex-col py-4 px-6 space-y-3.5">

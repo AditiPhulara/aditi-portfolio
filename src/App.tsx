@@ -4,6 +4,9 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
+import Internships from './components/Internships';
+import Certifications from './components/Certifications';
+import Achievements from './components/Achievements';
 import Resume from './components/Resume';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -40,7 +43,17 @@ export default function App() {
     const handleScroll = () => {
       setShowScrollTop(window.scrollY > 400);
 
-      const sections = ['home', 'about', 'skills', 'projects', 'resume', 'contact'];
+      const sections = [
+        'home',
+        'about',
+        'skills',
+        'projects',
+        'internships',
+        'certifications',
+        'achievements',
+        'resume',
+        'contact',
+      ];
       const scrollPosition = window.scrollY + 200;
 
       for (const section of sections) {
@@ -106,6 +119,9 @@ export default function App() {
         <About />
         <Skills />
         <Projects />
+        <Internships />
+        <Certifications />
+        <Achievements />
         <Resume />
         <Contact />
       </main>

@@ -1,56 +1,67 @@
 import { motion } from 'framer-motion';
-import { FaCode, FaCloud, FaTerminal, FaCheckCircle, FaLaptopCode } from 'react-icons/fa';
-
-interface SkillItem {
-  name: string;
-  level: number;
-}
+import { FaCode, FaBrain, FaTerminal, FaCheckCircle, FaLaptopCode, FaServer, FaTools, FaDatabase, FaLayerGroup } from 'react-icons/fa';
 
 interface SkillCategory {
   title: string;
   icon: React.ReactNode;
   description: string;
-  skills: SkillItem[];
+  skills: string[];
   color: string;
 }
 
 export default function Skills() {
   const skillCategories: SkillCategory[] = [
     {
-      title: 'Programming',
+      title: 'Languages',
       icon: <FaCode className="text-yellow-400 text-2xl" />,
-      description: 'Core logic, object-oriented programming, data structures, and script development.',
+      description: 'Core programming and scripting languages.',
       color: 'border-yellow-500/30 shadow-yellow-500/10',
-      skills: [
-        { name: 'C++', level: 85 },
-        { name: 'Python', level: 88 },
-      ],
+      skills: ['C++', 'Python', 'Java', 'SQL'],
     },
     {
-      title: 'Web Technologies',
-      icon: <FaLaptopCode className="text-indigo-400 text-2xl" />,
-      description: 'Frontend user interface design, styling systems, component architecture, and relational queries.',
-      color: 'border-indigo-500/30 shadow-indigo-500/10',
-      skills: [
-        { name: 'HTML', level: 90 },
-        { name: 'CSS', level: 88 },
-        { name: 'JavaScript', level: 85 },
-        { name: 'React.js', level: 85 },
-        { name: 'SQL', level: 82 },
-      ],
-    },
-    {
-      title: 'Cloud & Tools',
-      icon: <FaCloud className="text-cyan-400 text-2xl" />,
-      description: 'Cloud hosting, containerization, operating system management, and automated deployments.',
+      title: 'Frontend',
+      icon: <FaLaptopCode className="text-cyan-400 text-2xl" />,
+      description: 'User interface components, responsive layout, and modern web tech.',
       color: 'border-cyan-500/30 shadow-cyan-500/10',
+      skills: ['React.js', 'HTML5', 'CSS3', 'JavaScript'],
+    },
+    {
+      title: 'Backend',
+      icon: <FaServer className="text-indigo-400 text-2xl" />,
+      description: 'Server frameworks, RESTful web services, and API architectures.',
+      color: 'border-indigo-500/30 shadow-indigo-500/10',
+      skills: ['Node.js', 'Express.js', 'Flask', 'REST APIs'],
+    },
+    {
+      title: 'AI / ML',
+      icon: <FaBrain className="text-purple-400 text-2xl" />,
+      description: 'Machine learning models, deep learning frameworks, computer vision, and AI APIs.',
+      color: 'border-purple-500/30 shadow-purple-500/10',
+      skills: ['TensorFlow', 'Keras', 'OpenCV', 'NumPy', 'Streamlit', 'Gemini AI', 'OpenAI API'],
+    },
+    {
+      title: 'Database',
+      icon: <FaDatabase className="text-emerald-400 text-2xl" />,
+      description: 'Relational database systems and data modeling.',
+      color: 'border-emerald-500/30 shadow-emerald-500/10',
+      skills: ['MySQL'],
+    },
+    {
+      title: 'Tools & Platforms',
+      icon: <FaTools className="text-pink-400 text-2xl" />,
+      description: 'Version control, containerization, environment orchestration, and development platforms.',
+      color: 'border-pink-500/30 shadow-pink-500/10',
+      skills: ['Git', 'GitHub', 'Linux (Ubuntu)', 'VS Code', 'Docker'],
+    },
+    {
+      title: 'Core CS',
+      icon: <FaLayerGroup className="text-orange-400 text-2xl" />,
+      description: 'Computer science fundamental topics and algorithmic paradigms.',
+      color: 'border-orange-500/30 shadow-orange-500/10',
       skills: [
-        { name: 'Git', level: 90 },
-        { name: 'GitHub', level: 90 },
-        { name: 'Linux', level: 85 },
-        { name: 'Docker', level: 85 },
-        { name: 'AWS EC2', level: 82 },
-        { name: 'GitHub Actions', level: 80 },
+        'Data Structures & Algorithms',
+        'Object-Oriented Programming (OOP)',
+        'Database Management Systems (DBMS)',
       ],
     },
   ];
@@ -68,19 +79,19 @@ export default function Skills() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-purple-950/60 border border-purple-500/30 text-xs font-semibold text-purple-300 mb-3"
+            className="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full bg-purple-950/60 border border-purple-500/30 text-xs font-semibold text-purple-300 mb-3"
           >
             <FaTerminal className="text-cyan-400" />
-            <span>Technical Capabilities</span>
+            <span>Technical Inventory</span>
           </motion.div>
           <h2 className="font-outfit text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
-            Skills & <span className="text-gradient-cloud">Technical Stack</span>
+            Skills & <span className="text-gradient-cloud">Technologies</span>
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-purple-500 to-cyan-400 mx-auto mt-4 rounded-full" />
         </div>
 
         {/* Skills Grid */}
-        <div className="grid lg:grid-cols-3 gap-8 items-start">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
           {skillCategories.map((category, catIdx) => (
             <motion.div
               key={category.title}
@@ -88,7 +99,7 @@ export default function Skills() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: catIdx * 0.1 }}
-              className={`glass-cloud-card p-8 rounded-3xl border ${category.color} text-left relative overflow-hidden group hover:border-purple-500/50 transition-all duration-300 h-full flex flex-col justify-between`}
+              className={`glass-cloud-card p-7 rounded-3xl border ${category.color} text-left relative overflow-hidden group hover:border-purple-500/50 transition-all duration-300 flex flex-col justify-between`}
             >
               <div>
                 {/* Category Header */}
@@ -97,7 +108,7 @@ export default function Skills() {
                     {category.icon}
                   </div>
                   <div>
-                    <h3 className="font-outfit text-xl font-bold text-white group-hover:text-purple-300 transition-colors">
+                    <h3 className="font-outfit text-lg font-bold text-white group-hover:text-purple-300 transition-colors">
                       {category.title}
                     </h3>
                   </div>
@@ -107,27 +118,16 @@ export default function Skills() {
                   {category.description}
                 </p>
 
-                {/* Skill Items */}
-                <div className="space-y-4">
+                {/* Skill Badges */}
+                <div className="flex flex-wrap gap-2">
                   {category.skills.map((skill) => (
-                    <div key={skill.name} className="group/item">
-                      <div className="flex justify-between items-center text-xs font-semibold text-slate-300 mb-1.5">
-                        <span className="flex items-center space-x-2">
-                          <FaCheckCircle className="text-purple-400 text-xs" />
-                          <span>{skill.name}</span>
-                        </span>
-                        <span className="font-mono text-purple-300">{skill.level}%</span>
-                      </div>
-                      <div className="h-2 w-full bg-slate-950/80 rounded-full overflow-hidden border border-purple-500/20">
-                        <motion.div
-                          initial={{ width: 0 }}
-                          whileInView={{ width: `${skill.level}%` }}
-                          viewport={{ once: true }}
-                          transition={{ duration: 1, ease: 'easeOut', delay: 0.1 }}
-                          className="h-full bg-gradient-to-r from-purple-600 via-indigo-500 to-cyan-400 rounded-full"
-                        />
-                      </div>
-                    </div>
+                    <span
+                      key={skill}
+                      className="inline-flex items-center space-x-1.5 bg-slate-900/90 border border-purple-500/25 hover:border-cyan-400/50 text-slate-200 hover:text-white px-3 py-1.5 rounded-xl text-xs font-medium transition-all"
+                    >
+                      <FaCheckCircle className="text-cyan-400 text-[10px]" />
+                      <span>{skill}</span>
+                    </span>
                   ))}
                 </div>
               </div>

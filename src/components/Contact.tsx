@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaEnvelope, FaPaperPlane, FaCloud } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaPaperPlane, FaCloud, FaPhoneAlt } from 'react-icons/fa';
 
 export default function Contact() {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -17,9 +17,9 @@ export default function Contact() {
     },
     {
       name: 'LinkedIn',
-      value: 'linkedin.com/in/aditi-fulara-208346325',
+      value: 'linkedin.com/in/aditi-fulara',
       icon: <FaLinkedin className="text-indigo-400 text-xl" />,
-      href: 'https://linkedin.com/in/aditi-fulara-208346325/',
+      href: 'https://www.linkedin.com/in/aditi-fulara/',
       color: 'border-indigo-500/30 hover:border-indigo-500/70',
     },
     {
@@ -28,6 +28,13 @@ export default function Contact() {
       icon: <FaEnvelope className="text-cyan-400 text-xl" />,
       href: 'mailto:aditifulara@gmail.com',
       color: 'border-cyan-500/30 hover:border-cyan-500/70',
+    },
+    {
+      name: 'Phone',
+      value: '+91 9414633810',
+      icon: <FaPhoneAlt className="text-green-400 text-lg" />,
+      href: 'tel:+919414633810',
+      color: 'border-green-500/30 hover:border-green-500/70',
     },
   ];
 

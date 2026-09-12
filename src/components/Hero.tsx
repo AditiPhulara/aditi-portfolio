@@ -4,16 +4,17 @@ import {
   FaGitAlt,
   FaGithub,
   FaDocker,
-  FaLinux,
-  FaAws,
   FaReact,
   FaPython,
-  FaCloud,
   FaArrowRight,
   FaFilePdf,
   FaDownload,
   FaLinkedin,
-  FaEnvelope
+  FaEnvelope,
+  FaPhoneAlt,
+  FaBrain,
+  FaDatabase,
+  FaNodeJs
 } from 'react-icons/fa';
 import avatarImg from '../assets/aditi_avatar.png';
 import Toast from './Toast';
@@ -22,12 +23,12 @@ import ResumePreviewModal from './ResumePreviewModal';
 export default function Hero() {
   const [typedText, setTypedText] = useState('');
   const words = [
-    'Cloud Computing',
-    'AWS Services',
-    'Docker Containers',
-    'Python & C++',
-    'Web Development',
-    'Problem Solving'
+    'Machine Learning',
+    'Deep Learning & CNN',
+    'React.js & Node.js',
+    'Biomedical Signal Processing',
+    'Python & TensorFlow',
+    'Full-Stack Web Apps'
   ];
   const [wordIdx, setWordIdx] = useState(0);
   const [charIdx, setCharIdx] = useState(0);
@@ -79,14 +80,14 @@ export default function Hero() {
 
   // Floating technology icons around avatar
   const techIcons = [
-    { icon: <FaGitAlt className="text-xl text-orange-500" />, label: 'Git', position: '-top-4 left-6', delay: 0 },
-    { icon: <FaGithub className="text-2xl text-white" />, label: 'GitHub', position: 'top-10 -right-4', delay: 0.5 },
-    { icon: <FaDocker className="text-xl text-cyan-400" />, label: 'Docker', position: 'bottom-20 -left-6', delay: 1 },
-    { icon: <FaLinux className="text-xl text-yellow-400" />, label: 'Linux', position: '-bottom-4 right-10', delay: 1.5 },
-    { icon: <FaAws className="text-2xl text-orange-400" />, label: 'AWS', position: 'top-1/2 -left-8', delay: 2 },
-    { icon: <FaReact className="text-2xl text-cyan-300 animate-spin-slow" />, label: 'React', position: 'bottom-4 -right-4', delay: 2.5 },
-    { icon: <FaPython className="text-xl text-yellow-300" />, label: 'Python', position: '-top-6 right-16', delay: 3 },
-    { icon: <FaCloud className="text-xl text-indigo-400" />, label: 'Cloud', position: 'top-1/3 -right-6', delay: 3.5 },
+    { icon: <FaPython className="text-xl text-yellow-300" />, label: 'Python', position: '-top-4 left-6', delay: 0 },
+    { icon: <FaBrain className="text-xl text-purple-400" />, label: 'AI/ML', position: '-top-6 right-16', delay: 0.5 },
+    { icon: <FaReact className="text-2xl text-cyan-300 animate-spin-slow" />, label: 'React', position: 'top-10 -right-4', delay: 1.0 },
+    { icon: <FaNodeJs className="text-2xl text-green-400" />, label: 'Node.js', position: 'top-1/3 -right-6', delay: 1.5 },
+    { icon: <FaDatabase className="text-xl text-blue-400" />, label: 'MySQL', position: 'bottom-4 -right-4', delay: 2.0 },
+    { icon: <FaDocker className="text-xl text-cyan-400" />, label: 'Docker', position: '-bottom-4 right-10', delay: 2.5 },
+    { icon: <FaGitAlt className="text-xl text-orange-500" />, label: 'Git', position: 'bottom-20 -left-6', delay: 3.0 },
+    { icon: <FaGithub className="text-2xl text-white" />, label: 'GitHub', position: 'top-1/2 -left-8', delay: 3.5 },
   ];
 
   return (
@@ -118,17 +119,16 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="font-outfit text-4xl sm:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-tight mb-3"
           >
-            Aditi <span className="text-gradient-cloud">Fulara</span>
+            Aditi <span className="text-gradient-cloud">Phulara</span>
           </motion.h1>
 
-          {/* EXACT REQUESTED TITLE & SUBTITLE */}
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-xl sm:text-3xl font-bold text-indigo-300 tracking-wide mb-3"
           >
-            Computer Science Engineering Student
+            AI/ML & Software Engineer
           </motion.h2>
 
           <motion.p
@@ -137,9 +137,9 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.25 }}
             className="text-sm sm:text-base font-semibold text-purple-300 tracking-wide mb-6 flex flex-wrap gap-2"
           >
-            <span className="px-3 py-1 rounded-lg bg-purple-900/40 border border-purple-500/20">Cloud Computing Enthusiast</span>
-            <span className="px-3 py-1 rounded-lg bg-indigo-900/40 border border-indigo-500/20">AWS Learner</span>
-            <span className="px-3 py-1 rounded-lg bg-cyan-900/40 border border-cyan-500/20">Problem Solver</span>
+            <span className="px-3 py-1 rounded-lg bg-purple-900/40 border border-purple-500/20">AI / ML Research</span>
+            <span className="px-3 py-1 rounded-lg bg-indigo-900/40 border border-indigo-500/20">Full-Stack Development</span>
+            <span className="px-3 py-1 rounded-lg bg-cyan-900/40 border border-cyan-500/20">Biomedical Signal Processing</span>
           </motion.p>
 
           <motion.div
@@ -149,10 +149,10 @@ export default function Hero() {
             className="glass-cloud-card p-5 rounded-2xl mb-8 border-purple-500/20 text-slate-300 text-sm sm:text-base leading-relaxed"
           >
             <p className="mb-2 text-slate-300">
-              I enjoy building scalable web applications, exploring AWS services, and learning modern software development practices.
+              Computer Science undergraduate with hands-on experience in machine learning, deep learning, and full-stack web development. Completed internships at CSIR-CEERI and Byte Band Technologies.
             </p>
             <div className="flex items-center text-purple-300 font-mono text-sm font-semibold">
-              <span className="mr-2 text-cyan-400">▹ Exploring:</span>
+              <span className="mr-2 text-cyan-400">▹ Specializing:</span>
               <span className="text-white underline decoration-cyan-400 decoration-2 underline-offset-4">
                 {typedText}
               </span>
@@ -196,7 +196,7 @@ export default function Hero() {
                 <FaGithub className="text-lg" />
               </a>
               <a
-                href="https://linkedin.com/in/aditi-fulara-208346325/"
+                href="https://www.linkedin.com/in/aditi-fulara/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 bg-slate-900/90 border border-purple-500/20 text-slate-400 hover:text-purple-300 hover:border-purple-500/60 rounded-xl transition-all active:scale-95 shadow-md flex items-center justify-center hover:bg-purple-950/40"
@@ -210,6 +210,13 @@ export default function Hero() {
                 aria-label="Email Aditi"
               >
                 <FaEnvelope className="text-lg" />
+              </a>
+              <a
+                href="tel:+919414633810"
+                className="p-3 bg-slate-900/90 border border-purple-500/20 text-slate-400 hover:text-green-400 hover:border-green-500/60 rounded-xl transition-all active:scale-95 shadow-md flex items-center justify-center hover:bg-purple-950/40"
+                aria-label="Phone Aditi"
+              >
+                <FaPhoneAlt className="text-base" />
               </a>
             </div>
           </motion.div>
@@ -231,7 +238,7 @@ export default function Hero() {
               <div className="w-full h-full rounded-full overflow-hidden bg-slate-900 border-2 border-purple-900/80">
                 <img
                   src={avatarImg}
-                  alt="Aditi Fulara - Computer Science Engineering Student"
+                  alt="Aditi Phulara - Computer Science Engineering Student"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                 />
               </div>
@@ -264,7 +271,7 @@ export default function Hero() {
               className="absolute -bottom-6 left-1/2 -translate-x-1/2 glass-cloud-card px-5 py-2.5 rounded-full border-purple-500/40 text-xs font-bold text-purple-300 flex items-center space-x-2 shadow-2xl whitespace-nowrap"
             >
               <span className="w-2 h-2 rounded-full bg-cyan-400 animate-ping" />
-              <span>Computer Science Engineering | LPU</span>
+              <span>Computer Science Undergraduate | LPU</span>
             </motion.div>
           </motion.div>
         </div>
@@ -283,3 +290,4 @@ export default function Hero() {
     </section>
   );
 }
+

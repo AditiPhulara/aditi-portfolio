@@ -87,99 +87,154 @@ export default function ResumePreviewModal({
                 {/* Header */}
                 <div className="text-center border-b border-slate-200 pb-4 mb-5">
                   <h1 className="font-sans text-xl sm:text-2xl font-bold tracking-tight text-slate-900 mb-1">
-                    Aditi Fulara
+                    Aditi Phulara
                   </h1>
-                  <p className="text-[10px] text-slate-600 font-mono tracking-wide">
-                    aditifulara@gmail.com | github.com/AditiPhulara | linkedin.com/in/aditi-fulara-208346325/
+                  <p className="text-[9.5px] text-slate-600 font-mono tracking-wide">
+                    aditifulara@gmail.com | +91 9414633810 | linkedin.com/in/aditi-fulara | github.com/AditiPhulara
                   </p>
                 </div>
 
-                {/* About Me */}
+                {/* Professional Summary */}
                 <div className="space-y-1.5">
-                  <h4 className="font-bold text-purple-700 uppercase tracking-wide border-b border-slate-200 pb-0.5 text-[10px]">
-                    About Me
+                  <h4 className="font-bold text-purple-800 uppercase tracking-wide border-b border-slate-200 pb-0.5 text-[10px]">
+                    Professional Summary
                   </h4>
-                  <p className="text-[10px] text-slate-700">
-                    Computer Science Engineering Student at Lovely Professional University. Passionate about Cloud Computing, Web Development, AWS services, Docker, Linux, Git, and Problem Solving. Continuously improving technical skills through practical implementations and hands-on projects.
+                  <p className="text-[9.5px] text-slate-700 leading-normal">
+                    Computer Science undergraduate with hands-on experience in machine learning, deep learning, and full-stack web development. Completed an AI/ML research internship at CSIR-CEERI on biomedical signal processing and a software development internship. Built AI-powered applications with Python, TensorFlow, React.js, and Node.js. Seeking Software Engineering or AI/ML roles.
                   </p>
-                </div>
-
-                {/* Education */}
-                <div className="space-y-1.5 mt-5">
-                  <h4 className="font-bold text-purple-700 uppercase tracking-wide border-b border-slate-200 pb-0.5 text-[10px]">
-                    Education
-                  </h4>
-                  <div className="font-bold text-[10px] text-slate-800">
-                    Lovely Professional University
-                  </div>
-                  <div className="text-[9.5px] italic text-slate-600">
-                    Bachelor of Technology in Computer Science Engineering
-                  </div>
                 </div>
 
                 {/* Technical Skills */}
-                <div className="space-y-1.5 mt-5">
-                  <h4 className="font-bold text-purple-700 uppercase tracking-wide border-b border-slate-200 pb-0.5 text-[10px]">
-                    Skills
+                <div className="space-y-1.5 mt-4">
+                  <h4 className="font-bold text-purple-800 uppercase tracking-wide border-b border-slate-200 pb-0.5 text-[10px]">
+                    Technical Skills
                   </h4>
-                  <div className="space-y-1 text-[10px] text-slate-800">
-                    <p>
-                      <strong className="text-slate-900">Programming:</strong> C++, Python
-                    </p>
-                    <p>
-                      <strong className="text-slate-900">Web Technologies:</strong> HTML, CSS, JavaScript, React.js, SQL
-                    </p>
-                    <p>
-                      <strong className="text-slate-900">Cloud & Tools:</strong> Git, GitHub, Linux, Docker, AWS EC2, GitHub Actions
-                    </p>
+                  <div className="space-y-0.5 text-[9.5px] text-slate-800">
+                    <p><strong className="text-slate-900">Languages:</strong> C++, Python, Java, JavaScript, SQL</p>
+                    <p><strong className="text-slate-900">Frontend:</strong> React.js, HTML5, CSS3, JavaScript, Chart.js</p>
+                    <p><strong className="text-slate-900">Backend:</strong> Node.js, Express.js, Flask, REST APIs</p>
+                    <p><strong className="text-slate-900">AI / ML:</strong> Machine Learning, Deep Learning, CNN, Computer Vision, TensorFlow, Keras, OpenCV, NumPy, Streamlit, Gemini AI, OpenAI API</p>
+                    <p><strong className="text-slate-900">Database & Tools:</strong> MySQL, Git, GitHub, Linux (Ubuntu), Docker, CI/CD, VS Code</p>
+                    <p><strong className="text-slate-900">Core CS:</strong> Data Structures & Algorithms, Object-Oriented Programming (OOP), DBMS</p>
                   </div>
                 </div>
 
-                {/* Experience */}
-                <div className="space-y-1.5 mt-5">
-                  <h4 className="font-bold text-purple-700 uppercase tracking-wide border-b border-slate-200 pb-0.5 text-[10px]">
-                    Experience
+                {/* Experience / Internships */}
+                <div className="space-y-2 mt-4">
+                  <h4 className="font-bold text-purple-800 uppercase tracking-wide border-b border-slate-200 pb-0.5 text-[10px]">
+                    INTERNSHIPS
                   </h4>
-                  <p className="text-[10px] text-slate-700">
-                    Computer Science Student actively learning Cloud Computing, Web Development, AWS, Docker, and Software Engineering through academic projects and self-learning.
-                  </p>
-                </div>
-
-                {/* Projects */}
-                <div className="space-y-2 mt-5">
-                  <h4 className="font-bold text-purple-700 uppercase tracking-wide border-b border-slate-200 pb-0.5 text-[10px]">
-                    Projects
-                  </h4>
-                  
                   <div>
-                    <h5 className="font-bold text-[10px] text-slate-800">
-                      1. Cloud Resume Website with CI/CD
-                    </h5>
-                    <ul className="list-disc list-inside pl-1.5 text-[9.5px] text-slate-700 space-y-0.5">
-                      <li>Built a responsive personal portfolio website.</li>
-                      <li>Containerized using Docker & deployed on AWS EC2 with GitHub Actions CI/CD.</li>
+                    <div className="flex justify-between items-baseline font-bold text-[10px] text-slate-900">
+                      <span>AI/ML Research Intern</span>
+                      <span className="font-normal text-slate-600">Jun '26 – Jul '26</span>
+                    </div>
+                    <p className="text-[9px] italic text-slate-600">CSIR – Central Electronics Engineering Research Institute (CEERI), Pilani</p>
+                    <ul className="list-disc list-inside pl-1 text-[9px] text-slate-700 space-y-0.5 mt-0.5">
+                      <li>Implemented deep learning and signal processing techniques for fetal ECG extraction from maternal ECG signals.</li>
+                      <li>Developed and evaluated ECG feature detection models for accurate R-peak identification.</li>
+                      <li>Preprocessed and analyzed physiological signal datasets to improve model training and evaluation workflows.</li>
                     </ul>
                   </div>
 
                   <div className="pt-1">
-                    <h5 className="font-bold text-[10px] text-slate-800">
-                      2. Student Management System
-                    </h5>
-                    <ul className="list-disc list-inside pl-1.5 text-[9.5px] text-slate-700 space-y-0.5">
-                      <li>Developed a full-stack web application using React.js, HTML, CSS, JavaScript, and SQL.</li>
+                    <div className="flex justify-between items-baseline font-bold text-[10px] text-slate-900">
+                      <span>Software Developer Intern</span>
+                      <span className="font-normal text-slate-600">May '26 – Jul '26</span>
+                    </div>
+                    <p className="text-[9px] italic text-slate-600">Byte Band Technologies Private Limited</p>
+                    <ul className="list-disc list-inside pl-1 text-[9px] text-slate-700 space-y-0.5 mt-0.5">
+                      <li>Contributed to software design, development, and testing activities.</li>
+                      <li>Assisted in implementing and debugging application features.</li>
+                      <li>Collaborated with the development team to improve functionality and code quality.</li>
+                      <li>Participated in testing and validation of software modules.</li>
                     </ul>
                   </div>
                 </div>
 
-                {/* Achievements */}
-                <div className="space-y-1.5 mt-5">
-                  <h4 className="font-bold text-purple-700 uppercase tracking-wide border-b border-slate-200 pb-0.5 text-[10px]">
-                    Achievements
+                {/* Projects */}
+                <div className="space-y-2 mt-4">
+                  <h4 className="font-bold text-purple-800 uppercase tracking-wide border-b border-slate-200 pb-0.5 text-[10px]">
+                    PROJECTS
                   </h4>
-                  <ul className="list-disc list-inside pl-1.5 text-[9.5px] text-slate-700 space-y-0.5">
-                    <li>Built and deployed projects using AWS and Docker.</li>
-                    <li>Implemented CI/CD pipelines using GitHub Actions.</li>
-                    <li>Strong understanding of Git and Linux.</li>
+                  
+                  <div>
+                    <div className="flex justify-between items-baseline font-bold text-[10px] text-slate-900">
+                      <span>GestureTalk | Real-Time Sign Language to Speech Translation</span>
+                      <span className="font-normal text-slate-600">Aug '25 – Nov '25</span>
+                    </div>
+                    <ul className="list-disc list-inside pl-1 text-[9px] text-slate-700 space-y-0.5 mt-0.5">
+                      <li>Developed a real-time sign language translation system using computer vision and deep learning to convert hand gestures into spoken language.</li>
+                      <li>Extracted 21 hand landmark keypoints using MediaPipe Hands and trained TensorFlow/Keras models on 63-dimensional feature vectors for gesture classification.</li>
+                      <li>Integrated Gemini and Hugging Face APIs for confidence-based sentence reconstruction and contextual output generation.</li>
+                      <li>Achieved 88% gesture recognition accuracy, 10–12 FPS processing performance, and ~2-second speech generation latency.</li>
+                      <li><strong>Tech:</strong> Python, TensorFlow, Keras, MediaPipe, OpenCV, Gemini API, Hugging Face, pyttsx3, gTTS</li>
+                    </ul>
+                  </div>
+
+                  <div className="pt-1">
+                    <div className="flex justify-between items-baseline font-bold text-[10px] text-slate-900">
+                      <span>AI-Powered Plant Disease Detection System</span>
+                      <span className="font-normal text-slate-600">Jan '26 – May '26</span>
+                    </div>
+                    <ul className="list-disc list-inside pl-1 text-[9px] text-slate-700 space-y-0.5 mt-0.5">
+                      <li>Engineered a deep learning-based plant disease detection system using CNNs and TensorFlow, capable of classifying 38 plant disease categories from leaf images.</li>
+                      <li>Built an interactive web application using Streamlit and Flask, enabling real-time disease prediction with confidence scores and treatment recommendations.</li>
+                      <li>Integrated a Gemini AI-powered chatbot to provide plant health guidance, disease information, and preventive recommendations.</li>
+                      <li>Optimized image preprocessing and model inference pipelines, improving prediction speed and enhancing user experience.</li>
+                      <li><strong>Tech:</strong> Python, TensorFlow, Keras, CNN, Streamlit, Flask, OpenCV, NumPy, Gemini AI</li>
+                    </ul>
+                  </div>
+
+                  <div className="pt-1">
+                    <div className="flex justify-between items-baseline font-bold text-[10px] text-slate-900">
+                      <span>AI-Powered Chronic Pain Tracking & Analysis System</span>
+                      <span className="font-normal text-slate-600">Jan '26 – May '26</span>
+                    </div>
+                    <ul className="list-disc list-inside pl-1 text-[9px] text-slate-700 space-y-0.5 mt-0.5">
+                      <li>Architected and developed an AI-powered chronic pain monitoring platform for tracking pain intensity, affected regions, symptoms, and daily health patterns.</li>
+                      <li>Built a full-stack web application featuring dashboards, pain history tracking, and trend visualization.</li>
+                      <li>Implemented AI-driven pain analysis to generate personalized recommendations, identify recurring pain triggers, and provide domain-specific health insights.</li>
+                      <li>Implemented interactive charts and analytics for monitoring pain progression and supporting data-driven self-management.</li>
+                      <li><strong>Tech:</strong> React.js, Node.js, Express.js, MySQL, Chart.js, JavaScript, REST APIs, OpenAI API</li>
+                    </ul>
+                  </div>
+                </div>
+
+                {/* Certifications & Training */}
+                <div className="space-y-1.5 mt-4">
+                  <h4 className="font-bold text-purple-800 uppercase tracking-wide border-b border-slate-200 pb-0.5 text-[10px]">
+                    CERTIFICATIONS & TRAINING
+                  </h4>
+                  <div>
+                    <div className="flex justify-between font-bold text-[9.5px] text-slate-900">
+                      <span>DevOps & Cloud Engineering – EduNiketan</span>
+                      <span className="font-normal text-slate-600">Jun '26 – Jul '26</span>
+                    </div>
+                    <ul className="list-disc list-inside pl-1 text-[9px] text-slate-700 space-y-0.5 mt-0.5">
+                      <li>Completed intensive hands-on training in DevOps and Cloud Engineering concepts, covering Git, GitHub, Linux, Docker, CI/CD pipelines, and cloud computing fundamentals.</li>
+                      <li>Worked on deployment workflows, version control, and automation practices with practical exposure to industry cloud services and DevOps tools.</li>
+                    </ul>
+                  </div>
+                  <div className="flex justify-between text-[9px] font-bold text-slate-900 pt-1">
+                    <span>Database Management System – Infosys</span>
+                    <span className="font-normal text-slate-600">Jul '26</span>
+                  </div>
+                  <div className="flex justify-between text-[9px] font-bold text-slate-900">
+                    <span>Database and SQL – Infosys</span>
+                    <span className="font-normal text-slate-600">Sep '26</span>
+                  </div>
+                </div>
+
+                {/* Achievements */}
+                <div className="space-y-1.5 mt-4">
+                  <h4 className="font-bold text-purple-800 uppercase tracking-wide border-b border-slate-200 pb-0.5 text-[10px]">
+                    ACHIEVEMENTS
+                  </h4>
+                  <ul className="list-disc list-inside pl-1 text-[9px] text-slate-700 space-y-0.5">
+                    <li>Solved 100+ DSA problems on LeetCode, strengthening problem-solving and algorithmic thinking skills.</li>
+                    <li>Completed 2 technical internships in AI/ML and Software Development domains.</li>
+                    <li>Built and deployed full-stack and AI-powered applications using modern web and machine learning technologies.</li>
                   </ul>
                 </div>
               </div>
@@ -195,3 +250,4 @@ export default function ResumePreviewModal({
     </AnimatePresence>
   );
 }
+

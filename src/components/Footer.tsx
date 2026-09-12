@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaEnvelope, FaCloud } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaBrain } from 'react-icons/fa';
 
 export default function Footer() {
   const quickLinks = [
@@ -21,10 +21,10 @@ export default function Footer() {
           >
             <span className="text-slate-100">&lt;</span>
             <span className="text-gradient-cloud">Aditi</span>
-            <span className="text-purple-400 font-mono text-sm ml-1">.Cloud /&gt;</span>
+            <span className="text-purple-400 font-mono text-sm ml-1">.Dev /&gt;</span>
           </a>
           <p className="text-xs text-slate-400 font-sans">
-            &copy; {new Date().getFullYear()} Aditi Fulara. All rights reserved.
+            &copy; {new Date().getFullYear()} Aditi Phulara. All rights reserved.
           </p>
         </div>
 
@@ -54,7 +54,7 @@ export default function Footer() {
               <FaGithub className="text-base" />
             </a>
             <a
-              href="https://linkedin.com/in/aditi-fulara-208346325/"
+              href="https://www.linkedin.com/in/aditi-fulara/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-lg bg-slate-900 border border-purple-500/20 text-slate-400 hover:text-purple-300 transition-colors"
@@ -72,11 +72,12 @@ export default function Footer() {
           </div>
 
           <div className="flex items-center space-x-1.5 text-[10px] font-mono text-purple-300 bg-purple-950/40 border border-purple-500/30 px-3 py-1 rounded-full">
-            <FaCloud className="text-cyan-400 text-xs animate-pulse" />
-            <span>Cloud Infrastructure | LPU</span>
+            <FaBrain className="text-cyan-400 text-xs animate-pulse" />
+            <span>AI/ML & Software Engineering | LPU</span>
           </div>
         </div>
       </div>
     </footer>
   );
 }
+
